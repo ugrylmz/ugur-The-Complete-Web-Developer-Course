@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lecture32</title>
+    <!--Register Page-->
 </head>
 <body>
-    <form method="GET" action="action.php"> <!--method="POST"-->
-        First Name: <input type="text"name="firstname" ><br>
+    <!-- Use get, not post -->
+    <span></span> <!-- for inline-->
+<div class="container"> <!--for example in bootsrap --> 
+    <form method="GET" > <!--method="POST" action="action.php"-->
+       <span> First Name:</span> <input type="text"name="firstname" ><br>
         Last Name: <input type="text"name="lastname" ><br>
         Email: <input type="email"name="email"  required><br>
         Password: <input type="password"name="password"  min="5"> <br>
         Birthday: <input type="date"name="birthday" > <br>
-        <input type="radio" name="gender"> Male <br>
-        <input type="radio" name="gender"> Female <br>
-        <input type="radio" name="gender"> Other <br>
+        <input type="radio" name="gender" value="male"> Male <br>
+        <input type="radio" name="gender" value="female"> Female <br>
+        <input type="radio" name="gender" value="other"> Other <br>
         Pets: <br>
         <input type="checkbox" name="cat">Cat <br>
         <input type="checkbox" name="dog" >Dog <br>
         Cars: <br>
-        <select > <!--multiple-->
+        <select name="cars"> <!--multiple-->
             <option value="volvo"name="volvo" >Volvo</option>
             <option value="bmw"name="bmw" >BMW</option>
             <option value="VW"name="vw" >Volkswagen</option>
@@ -32,8 +36,15 @@
 
 
     </form>
+</div>
 </body>
 </html>
 
-?firstname=fake&lastname=fake&email=fake%40gmail.com&password=fakefake&birthday=2019-05-16&gender=on&cat=on
-?firstname=asd&lastname=qwe&email=uguryilmaz235%40gmail.com&password=asdasdasd&birthday=2019-05-23&gender=on&cat=on
+?firstname=asd
+&lastname=qwe
+&email=1.bimester%40goethe.de
+&password=asdasd
+&birthday=2019-05-09
+&gender=male
+&cat=on
+&cars=bmw

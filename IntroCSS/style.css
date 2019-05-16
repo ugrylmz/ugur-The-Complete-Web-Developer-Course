@@ -1,0 +1,30 @@
+/*Selector{
+    property: value;
+}*/
+header{
+    color: aliceblue;
+    border: 5px solid rgba(1, 62, 29,0.6);
+    cursor: pointer;
+
+}
+h2,p{
+    color: red;
+    text-align: center;
+    border: 5px solid rgba(13, 163, 83, 0.5);
+    cursor: pointer;
+}
+
+p{
+    color: rgba(223, 233, 223,0.9);
+    text-align: center;
+}
+body{
+    background-image: url(https://baucyclingclub.firebaseapp.com/3.jpg);
+    background-size: cover;
+    text-align: center;
+}
+li{
+    list-style: none;
+    display: inline-block;
+
+}

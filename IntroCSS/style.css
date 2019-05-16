@@ -1,30 +1,56 @@
 /*Selector{
     property: value;
 }*/
+*{
+    text-align: right;
+}
 header{
-    color: aliceblue;
-    border: 5px solid rgba(1, 62, 29,0.6);
+    color: rgba(13, 70, 121,0.7);
+    border: 5px solid rgba(1, 62, 29,0.5);    
     cursor: pointer;
 
 }
-h2,p{
-    color: red;
-    text-align: center;
-    border: 5px solid rgba(13, 163, 83, 0.5);
+h2 +  p:hover{
+    color: rgb(240, 16, 221);
+    text-align: right;
+    border: 5px dashed rgba(228, 23, 177, 0.5);
     cursor: pointer;
 }
 
 p{
-    color: rgba(223, 233, 223,0.9);
+    color:rgb(45, 4, 196) !important;
     text-align: center;
+   
+}
+p{
+    color: rgba(20, 3, 172, 0.9);
+    text-align: center;
+   
 }
 body{
-    background-image: url(https://baucyclingclub.firebaseapp.com/3.jpg);
+    background-image: url(back2.jpg);
     background-size: cover;
+    
     text-align: center;
+    
 }
-li{
+li {
     list-style: none;
     display: inline-block;
 
+}
+.webtext:last-child{
+    border: 5px dashed rgb(231, 12, 30);
+    background-size: 10px
+    
+}
+.active:first-child{
+    background-color:rgba(194, 197, 19, 0.45);
+    border: 5px dashed rgb(235, 84, 14);
+}
+#div1{
+    background-color: rgba(0,0,255,0.3);
+}   
+#div2{
+    background-color: rgba(255,0,0,0.2);
 }

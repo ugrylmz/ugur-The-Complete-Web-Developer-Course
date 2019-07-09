@@ -8,23 +8,33 @@ header{
     color: rgba(13, 70, 121,0.7);
     border: 5px solid rgba(1, 62, 29,0.5);    
     cursor: pointer;
+    font-size: 150%;
 
 }
 h2 +  p:hover{
-    color: rgb(240, 16, 221);
+    color: rgb(24, 2, 2);
     text-align: right;
-    border: 5px dashed rgba(228, 23, 177, 0.5);
+    border: 5px dashed rgba(31, 14, 27, 0.5);
     cursor: pointer;
 }
 
 p{
-    color:rgb(45, 4, 196) !important;
+    color:rgba(3, 1, 1, 0.9) !important;
     text-align: center;
+  /*  text-transform: uppercase;  */
+    line-height: 20px;
+    font-family: 'Poiret One', cursive;
+
    
 }
 p{
-    color: rgba(20, 3, 172, 0.9);
+    color: rgba(106, 224, 26, 0.9);
+    line-height: 50px;
     text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 150%;
+
    
 }
 body{

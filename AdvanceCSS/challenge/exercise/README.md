@@ -69,10 +69,30 @@
 justify-content: center; </br>
 align-items: flex-end; </br>
 flex-direction: row-reverse;</code>
-
 <h1>Level 14</h1>
-
+<p>Öğe başına uygulayabileceğiniz bir başka kural ise <code>
+align-self</code>'tir. Bu kural align-items kuralı ile aynı değerleri alır ve bu değeri o öğe için uygular.</p>
+<code>
+order: 1;</code>
 <h1>Level 15</h1>
+<code>
+order: 1;</code>
+
 <h1>Level 16</h1>
+<code>
+align-self: flex-end;</code>
 <h1>Level 17</h1>
+<code>
+order: 1;</br>
+align-self :flex-end;</code>
 <h1>Level 18</h1>
+<ul><li><code>nowrap</code>: Tüm öğeler tek satıra sığar.</li><li><code>wrap</code>: Öğeler satırlara bölünür.</li><li><code>wrap-reverse</code>: Öğeler satırlara ters sırada bölünür.</li></ul>
+<code>flex-wrap: wrap;</code>
+<h1>Level 19</h1>
+<p><code class="help">flex-direction</code> ve <code class="help">flex-wrap</code> kombinasyonunu kullanarak bu kurbağa ordusunun üçlü sıralı düzene girmesine yardımcı olun.</p>
+<code>flex-direction: column;<<br>
+flex-wrap:wrap;</code>
+<h1>Level 18</h1>
+<code>flex-wrap: wrap;</code>
+<h1>Level 18</h1>
+<code>flex-wrap: wrap;</code>

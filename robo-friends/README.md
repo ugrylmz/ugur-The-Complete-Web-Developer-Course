@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project was published <a href="https://robofriends.web.app/">https://robofriends.web.app/</a> 
 
 ## Available Scripts
 

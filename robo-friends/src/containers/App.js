@@ -35,26 +35,23 @@ export class App extends Component {
     this.setState({ searchfield: event.target.value }); // update the state
   };
   render() {
+    const { robots, searchfield } = this.state;
     // console.log("render ");
-    const filteredRobots = this.state.robots.filter(s => {
-      return s.name
-        .toLowerCase()
-        .includes(this.state.searchfield.toLowerCase()); // we manage the state is here...
+    const filteredRobots = robots.filter(robot => {
+      return robot.name.toLowerCase().includes(searchfield.toLowerCase()); // we manage the state is here...
     });
     // console.log(filteredRobots);
-    if (this.state.robots.length === 0) {
-      return <h1 className="tc">LoAdInG...</h1>;
-    } else {
-      return (
-        <div className="tc">
-          <h1 className="center f1">Robo Friends</h1>
-          <SearchBox searchChange={this.onSearchChange} />
-          <Scroll>
-            <CardList robots={filteredRobots} />
-          </Scroll>
-        </div>
-      );
-    }
+    return !robots.length ? (
+      <h1 className="tc">LoAdInG...</h1>
+    ) : (
+      <div className="tc">
+        <h1 className="center f1">Robo Friends</h1>
+        <SearchBox searchChange={this.onSearchChange} />
+        <Scroll>
+          <CardList robots={filteredRobots} />
+        </Scroll>
+      </div>
+    );
   }
 }
 export default App;
